@@ -1,0 +1,40 @@
+{
+  "name": "rxeb",
+  "version": "1.0.0",
+  "description": "ReactiveX Event Bus",
+  "keywords": [
+    "event",
+    "reactivex"
+  ],
+  "homepage": "https://github.com/uia4w/web-template-rest",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Kyle K. Lin",
+    "url": "https://github.com/uia4w/web-template-rest"
+  },
+  "main": "dist/rxeb.js",
+  "module": "index",
+  "browser": "index",
+  "dependencies": {
+    "ms": "^2.0.0",
+    "rxjs": "^6.4.0"
+  },
+  "devDependencies": {
+    "eslint": "4",
+    "package-preamble": "0.1",
+    "rollup": "^1.6.0",
+    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rxjs": "6.4.0",
+    "tape": "4"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "tape test/**/*-test.js",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist"
+  ]
+}
